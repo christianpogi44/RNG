@@ -1,0 +1,87 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("BASKETBALL RNG", "DarkTheme")
+local Tab = Window:NewTab("SCRIPT")
+local Section = Tab:NewSection("SPIN CARD")
+Section:NewButton("Auto Spin Card🖱️", "ButtonInfo", function()
+while true do 
+wait(0.0)
+local args = {
+    [1] = "Default"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GachaService"):WaitForChild("RF"):WaitForChild("AttemptToSpinGacha"):InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+local Tab = Window:NewTab("DELETE CARD")
+local Section = Tab:NewSection("AUTO DELETE")
+Section:NewButton("AUTO DELETE COMMON❌", "ButtonInfo", function()
+while true do 
+wait(0.1)
+local args = {
+    [1] = "Common"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE UNCOMMON❌", "ButtonInfo", function()
+local args = {
+    [1] = "Uncommon"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE RARE❌", "ButtonInfo", function()
+local args = {
+    [1] = "Rare"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE LEGENDARY❌", "ButtonInfo", function()
+local args = {
+    [1] = "Legendary"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE CHAMPION❌", "ButtonInfo", function()
+local args = {
+    [1] = "Champion"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE GOAT❌", "ButtonInfo", function()
+local args = {
+    [1] = "GOAT"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("AUTO DELETE  ECLIPSE ❌", "ButtonInfo", function()
+local args = {
+    [1] = "Eclipse"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("InventoryService"):WaitForChild("RF"):WaitForChild("ToggleAutoSell"):InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+local Tab = Window:NewTab("SPIN")
+local Section = Tab:NewSection("Misc")
+Section:NewButton("Goto Spin", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.2217331, 95.3558044, -203.339615, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    print("Clicked")
+end)
